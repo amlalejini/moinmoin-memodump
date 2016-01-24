@@ -69,12 +69,12 @@
 ===========================================================*/
 
 /* custom rules ----- to ---------- */
-.hr1 {border-top-width: 2pt; border-color: #2F2F2F}
-.hr2 {border-top-width: 3pt; border-color: #2F2F2F}
-.hr3 {border-top-width: 4pt; border-color: #2F2F2F}
-.hr4 {border-top-width: 5pt; border-color: #2F2F2F}
-.hr5 {border-top-width: 6pt; border-color: #2F2F2F}
-.hr6 {border-top-width: 7pt; border-color: #2F2F2F}
+.hr1 {border-top-width: 2pt; border-color: #D4D4D4}
+.hr2 {border-top-width: 3pt; border-color: #D4D4D4}
+.hr3 {border-top-width: 4pt; border-color: #D4D4D4}
+.hr4 {border-top-width: 5pt; border-color: #D4D4D4}
+.hr5 {border-top-width: 6pt; border-color: #D4D4D4}
+.hr6 {border-top-width: 7pt; border-color: #D4D4D4}
 /* text decorations */
 .u {
 	text-decoration: underline;
