@@ -33,6 +33,8 @@ from MoinMoin import wikiutil
 from MoinMoin.action import get_available_actions
 from MoinMoin.Page import Page
 
+CUST_SITE_NAME = u'Lalejini'
+
 class Theme(ThemeBase):
 
     name = "memodump"
@@ -295,7 +297,7 @@ class Theme(ThemeBase):
         """
         Append in-html script at the bottom of the page body.
         """
-        
+
         return ur"""
   <script>
     +function ($) {
@@ -306,7 +308,7 @@ class Theme(ThemeBase):
       $('.navbar-collapse').on('hidden.bs.collapse', function () {
         $('.navbar-mobile-toggle').togglejs('hide');
       });
-      
+
       //Scroll position fix for hash anchors
       var mdAnchorFix = {
         escapeRe: /[ !"#$%&'()*+,.\/:;<=>?@\[\\\]^`{|}~]/g,
@@ -352,7 +354,7 @@ class Theme(ThemeBase):
     }(jQuery);
   </script>
 """
-    
+
     def logo(self):
         """ Assemble logo with link to front page
         Using <a> tag only instead of wrapping with div
@@ -372,6 +374,8 @@ class Theme(ThemeBase):
             %s
           </div>
           ''' % html
+        else:
+            html = CUST_SITE_NAME
         return html
 
     def location(self, d):
