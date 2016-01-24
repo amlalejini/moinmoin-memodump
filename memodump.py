@@ -33,8 +33,6 @@ from MoinMoin import wikiutil
 from MoinMoin.action import get_available_actions
 from MoinMoin.Page import Page
 
-CUST_SITE_NAME = u'Lalejini'
-
 class Theme(ThemeBase):
 
     name = "memodump"
@@ -374,8 +372,6 @@ class Theme(ThemeBase):
             %s
           </div>
           ''' % html
-        else:
-            html = CUST_SITE_NAME
         return html
 
     def location(self, d):
